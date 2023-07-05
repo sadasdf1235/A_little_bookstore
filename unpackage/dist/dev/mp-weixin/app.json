@@ -1,0 +1,63 @@
+{
+  "pages": [
+    "pages/book/book",
+    "pages/video/video",
+    "pages/cartoon/cartoon"
+  ],
+  "subPackages": [
+    {
+      "root": "commonPag",
+      "pages": [
+        "search/search"
+      ]
+    },
+    {
+      "root": "bookPag",
+      "pages": [
+        "bookDetail/bookDetail",
+        "readBook/readBook"
+      ]
+    },
+    {
+      "root": "videoPag",
+      "pages": [
+        "videoDetail/videoDetail"
+      ]
+    },
+    {
+      "root": "cartoonPag",
+      "pages": [
+        "cartoonDetail/cartoonDetail"
+      ]
+    }
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "一点书城",
+    "navigationBarBackgroundColor": "#acff7f",
+    "backgroundColor": "#ffff7f"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/book/book",
+        "iconPath": "static/tabIcons/book.png",
+        "selectedIconPath": "static/tabIcons/book_active.png",
+        "text": "书架"
+      },
+      {
+        "pagePath": "pages/video/video",
+        "iconPath": "static/tabIcons/video.png",
+        "selectedIconPath": "static/tabIcons/video-active.png",
+        "text": "视频"
+      },
+      {
+        "pagePath": "pages/cartoon/cartoon",
+        "iconPath": "static/tabIcons/cartoon.png",
+        "selectedIconPath": "static/tabIcons/cartoon_active.png",
+        "text": "漫画"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

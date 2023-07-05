@@ -1,0 +1,1 @@
+<view class="uni-card-right"><text>{{"作者:"+item.author}}</text><text>{{"分类:"+item.comicType}}</text><text>{{"简介:"+item.descs}}</text></view>

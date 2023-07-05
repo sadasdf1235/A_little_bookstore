@@ -1,0 +1,251 @@
+.yingbing-read-page-flip.data-v-81457e16 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.yingbing-flip.data-v-81457e16 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+	box-sizing: border-box;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+.flip-item.data-v-81457e16 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+
+	box-sizing: border-box;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+.flip-item-wrapper.data-v-81457e16 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+
+	box-sizing: border-box;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+.flip-item-header.data-v-81457e16 {
+
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+
+	justify-content: center;
+	height: 50rpx;
+	overflow: hidden;
+}
+.flip-item-header-text.data-v-81457e16 {
+	font-size: 24rpx;
+	opacity: .4;
+	font-weight: bold;
+
+
+
+
+
+	display: -webkit-box !important;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-break: break-all;
+	-webkit-box-orient:vertical;
+	-webkit-line-clamp: 1;
+}
+.flip-item-footer.data-v-81457e16 {
+
+	display: flex;
+	box-sizing: border-box;
+
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 50rpx;
+	overflow: hidden;
+}
+.flip-item-footer-text.data-v-81457e16 {
+	font-size: 24rpx;
+	opacity: .4;
+	font-weight: bold;
+}
+.flip-item-content.data-v-81457e16 {
+	flex: 1;
+
+	box-sizing: border-box;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+.flip-item-text.data-v-81457e16 {
+
+	display: flex;
+	flex-direction: column;
+}
+.flip-text.data-v-81457e16 {
+
+	box-sizing: border-box;
+	white-space: pre-wrap;
+	font-family: Microsoft YaHei, 微软雅黑;
+}
+.flip-loading.data-v-81457e16 {
+
+	display: flex;
+
+	align-items: center;
+	justify-content: center;
+}
+.flip-item-bg.data-v-81457e16 {
+	position: absolute;
+}
+.flip-item-shadow.data-v-81457e16 {
+	position: absolute;
+	width: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+}
+.yingbing-scroll.data-v-81457e16 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+	box-sizing: border-box;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+.scroll-wrapper.data-v-81457e16 {
+
+	box-sizing: border-box;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+
+	flex: 1;
+}
+.scroll-item.data-v-81457e16 {
+
+	box-sizing: border-box;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+.scroll-item-content.data-v-81457e16 {
+
+	box-sizing: border-box;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+
+	padding-bottom: 20rpx;
+}
+.scroll-text.data-v-81457e16 {
+
+	box-sizing: border-box;
+	white-space: pre-wrap;
+	font-family: Microsoft YaHei, 微软雅黑;
+}
+.scroll-item-header.data-v-81457e16 {
+
+	display: flex;
+	box-sizing: border-box;
+	overflow: hidden;
+
+	padding: 0 40rpx;
+	position: fixed;
+	left: 20rpx;
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 50rpx;
+	background-color: rgba(0,0,0,.4);
+	border-radius: 50rpx;
+}
+.scroll-item-header-text.data-v-81457e16 {
+	font-size: 24rpx;
+	color: #fff;
+
+
+
+
+
+	display: -webkit-box !important;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-break: break-all;
+	-webkit-box-orient:vertical;
+	-webkit-line-clamp: 1;
+}
+.scroll-item-footer.data-v-81457e16 {
+
+	display: flex;
+	box-sizing: border-box;
+	overflow: hidden;
+
+	padding: 0 40rpx;
+	position: fixed;
+	left: 20rpx;
+	right: 20rpx;
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 50rpx;
+	background-color: rgba(0,0,0,.4);
+	border-radius: 50rpx;
+}
+.scroll-item-footer-text.data-v-81457e16 {
+	font-size: 24rpx;
+	color: #fff;
+}
+.yingbing-read-page.data-v-81457e16 {
+
+	width: 100%;
+	height: 100%;
+
+
+
+
+	position: relative;
+}
+.yingbing-loading.data-v-81457e16 {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+
+	box-sizing: border-box;
+	overflow: hidden;
+	display: flex;
+
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+.yingbing-slot.data-v-81457e16 {
+
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	overflow: hidden;
+
+	flex: 1;
+}
+

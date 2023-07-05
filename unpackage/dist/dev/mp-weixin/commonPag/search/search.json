@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "search-search-section-default": "/commonPag/search/search-search-section-default",
+    "search-search-section-default1": "/commonPag/search/search-search-section-default1",
+    "uni-search-bar": "/uni_modules/uni-search-bar/components/uni-search-bar/uni-search-bar",
+    "history": "/components/history/history",
+    "book-detail": "/components/bookDetail/bookDetail",
+    "search-section": "/components/searchSection/searchSection"
+  }
+}

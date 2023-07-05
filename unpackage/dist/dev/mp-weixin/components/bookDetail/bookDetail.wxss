@@ -1,0 +1,31 @@
+.search-bottom .search-bottom-list {
+  display: flex;
+  margin-bottom: 30rpx;
+}
+.search-bottom .search-bottom-list ._img {
+  width: 33%;
+}
+.search-bottom .search-bottom-list .search-bottom-list-right {
+  width: 66%;
+  height: 400rpx;
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: column;
+}
+.search-bottom .search-bottom-list .search-bottom-list-right text:first-child {
+  font-size: 40rpx;
+  font-weight: bold;
+}
+.search-bottom .search-bottom-list .search-bottom-list-right .tag {
+  width: 200rpx;
+  text-align: center;
+  height: 40rpx;
+  border: 2rpx solid black;
+  background-color: #B22222;
+  color: white;
+}
+.search-bottom .search-bottom-list .search-bottom-list-right text:last-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+

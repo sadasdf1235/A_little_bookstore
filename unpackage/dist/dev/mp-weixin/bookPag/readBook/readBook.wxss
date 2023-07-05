@@ -1,0 +1,88 @@
+.main {
+  width: 100vw;
+  height: 100vh;
+}
+.main .set-box {
+  height: 400rpx;
+  padding: 95rpx 25rpx 0 25rpx;
+  color: black;
+}
+.main .set-box .font {
+  display: flex;
+  align-items: center;
+}
+.main .set-box .font view {
+  display: flex;
+  align-items: center;
+}
+.main .set-box .font view ._span {
+  font-weight: 600;
+  margin-right: 15rpx;
+}
+.main .set-box .font .lineHeight {
+  margin-left: 30rpx;
+}
+.main .set-box .bgColor {
+  margin-top: 30rpx;
+  display: flex;
+  align-items: center;
+}
+.main .set-box .bgColor ._span {
+  font-weight: 600;
+  margin-right: 20rpx;
+}
+.main .set-box .bgColor view {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  border: 1px solid #999;
+  margin: 10rpx;
+}
+.main .set-box .bgColor .bgColorActive {
+  border: 1px solid red;
+}
+.main .set-box .pages {
+  display: flex;
+  align-items: center;
+  margin-top: 30rpx;
+}
+.main .set-box .pages ._span {
+  font-weight: 600;
+}
+.main .set-box .pages .item {
+  width: 80rpx;
+  height: 60rpx;
+  border-radius: 35rpx;
+  line-height: 60rpx;
+  text-align: center;
+  border: 1px solid #999;
+  margin: 10rpx;
+  font-size: 28rpx;
+  transition: all 0.4s;
+}
+.main .set-box .pages .typeActive {
+  border: 1px solid red;
+}
+.main .scroll {
+  white-space: nowrap;
+  height: 100vh;
+  margin-top: 10rpx;
+  padding-left: 20rpx;
+}
+.main .scroll .scroll-list {
+  padding: 20rpx 0;
+  color: #444;
+  font-size: 34rpx;
+  width: 480rpx;
+  overflow: hidden;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border-bottom: 1px solid #444;
+}
+.main .scroll .scrollActive {
+  color: #000;
+  font-size: 42rpx;
+  font-weight: 700;
+}
+

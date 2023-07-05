@@ -1,0 +1,25 @@
+.cartoon-top {
+  background-color: #acff7f;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+}
+.temp {
+  display: flex;
+  justify-content: space-between;
+}
+.temp .bottom-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.temp .bottom-text text {
+  display: block;
+  margin: 20rpx;
+}
+.temp .bottom-lText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

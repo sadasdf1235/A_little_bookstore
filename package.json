@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@escook/request-miniprogram": "^0.2.1",
+    "dplayer": "^1.27.1",
+    "hls.js": "^1.4.0",
+    "i": "^0.3.7",
+    "npm": "^9.6.5",
+    "videojs-contrib-hls": "^5.15.0"
+  }
+}

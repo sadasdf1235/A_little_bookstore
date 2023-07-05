@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "onReachBottomDistance": 150,
+  "usingComponents": {
+    "uni-search-bar": "/uni_modules/uni-search-bar/components/uni-search-bar/uni-search-bar",
+    "history": "/components/history/history",
+    "uni-section": "/uni_modules/uni-section/components/uni-section/uni-section",
+    "uni-card": "/uni_modules/uni-card/components/uni-card/uni-card"
+  }
+}

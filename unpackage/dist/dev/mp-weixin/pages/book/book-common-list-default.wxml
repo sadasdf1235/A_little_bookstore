@@ -1,0 +1,1 @@
+<view class="bottom-right"><text>{{item.title}}</text><text>{{item.author}}</text><text>{{item.fictionType}}</text></view>

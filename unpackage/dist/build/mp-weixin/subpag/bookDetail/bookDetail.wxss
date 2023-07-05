@@ -1,0 +1,1 @@
+.top{text-align:center}.top .top-title{margin-top:-30rpx}.top ._img{width:50%}.middle text:first-child{display:block;margin-bottom:30rpx}.middle text:last-child{display:block;text-indent:56rpx}.footer{display:flex;justify-content:space-around}.footer .footer-nav{width:50%;height:100rpx;text-align:center;line-height:100rpx;margin-top:40rpx}

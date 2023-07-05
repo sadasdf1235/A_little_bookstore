@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+    "battery": "/uni_modules/yingbing-ReadPage/components/modules/battery",
+    "read-rich-text": "/uni_modules/yingbing-ReadPage/components/modules/richtext",
+    "scroll-list": "/uni_modules/yingbing-ReadPage/components/modules/list/list",
+    "list-loading": "/uni_modules/yingbing-ReadPage/components/modules/list/modules/common/loading"
+  }
+}

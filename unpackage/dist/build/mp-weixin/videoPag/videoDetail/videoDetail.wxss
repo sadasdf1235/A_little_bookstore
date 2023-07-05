@@ -1,0 +1,1 @@
+.main .video{width:100vw}.main .video video{position:relative}.main .video video cover-view{position:absolute;bottom:30rpx;right:90rpx;color:#fff}.main .video video{width:100%}.main .video-list{display:flex;flex-direction:row;flex-wrap:wrap}.main .video-list .tag-view{margin:10rpx}

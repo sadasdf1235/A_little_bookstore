@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "list-icon": "/uni_modules/yingbing-ReadPage/components/modules/list/modules/common/icon",
+    "list-loading": "/uni_modules/yingbing-ReadPage/components/modules/list/modules/common/loading"
+  }
+}

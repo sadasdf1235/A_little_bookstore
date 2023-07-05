@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "",
+  "navigationStyle": "custom",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "yingbing-read-page": "/uni_modules/yingbing-ReadPage/components/yingbing-ReadPage/yingbing-ReadPage",
+    "popup": "/components/popup/popup",
+    "catalogue": "/components/catalogue/catalogue"
+  }
+}

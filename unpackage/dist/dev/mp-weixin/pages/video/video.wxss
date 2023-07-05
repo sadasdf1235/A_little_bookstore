@@ -1,0 +1,32 @@
+.main .nav ._ul {
+  display: flex;
+  flex-direction: row;
+}
+.main .nav ._ul ._li {
+  list-style: none;
+  margin: 30rpx;
+}
+.main .nav ._ul ._li:first-child {
+  margin-left: 0;
+}
+.main .video-record .scroll-view {
+  height: 60vh;
+}
+.main .video-record .scroll-view .slot {
+  display: flex;
+  justify-content: space-between;
+}
+.main .video-record .scroll-view .slot .left {
+  display: flex;
+  flex-direction: column;
+}
+.main .video-record .scroll-view .slot .left text {
+  margin: 20rpx;
+  display: block;
+}
+.main .video-record .scroll-view .slot .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

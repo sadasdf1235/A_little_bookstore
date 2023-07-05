@@ -1,0 +1,26 @@
+.main .video {
+  width: 100vw;
+}
+.main .video video {
+  position: relative;
+}
+.main .video video .speed {
+  position: absolute;
+  bottom: 25rpx ;
+  right: 86rpx;
+  color: white;
+  z-index: 999;
+  line-height: normal;
+}
+.main .video video {
+  width: 100%;
+}
+.main .video-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.main .video-list .tag-view {
+  margin: 10rpx;
+}
+

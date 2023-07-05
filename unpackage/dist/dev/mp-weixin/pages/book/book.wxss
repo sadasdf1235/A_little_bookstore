@@ -1,0 +1,21 @@
+.book-top {
+  background-color: #acff7f;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+}
+.bottom-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bottom-right :first-child {
+  font-size: 48rpx;
+  font-weight: bold;
+  margin-top: 0;
+}
+.bottom-right text {
+  margin: 30rpx;
+}
+

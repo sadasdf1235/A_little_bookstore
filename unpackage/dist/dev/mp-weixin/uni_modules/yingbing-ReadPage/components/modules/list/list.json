@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "list-pulldown": "/uni_modules/yingbing-ReadPage/components/modules/list/modules/pulldown/pulldown",
+    "list-loadmore": "/uni_modules/yingbing-ReadPage/components/modules/list/modules/loadmore/loadmore"
+  }
+}

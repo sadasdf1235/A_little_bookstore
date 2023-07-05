@@ -1,0 +1,1 @@
+<view class="yingbing-battery data-v-378ea4b7"><view class="yingbing-battery-wrapper data-v-378ea4b7" style="{{'border-color:'+(color)+';'}}"><view class="yingbing-battery-content data-v-378ea4b7"><view style="{{'flex:'+(1)+';'+('background-color:'+(color)+';')+('width:'+(value+'rpx')+';')}}" class="data-v-378ea4b7"></view></view></view></view>

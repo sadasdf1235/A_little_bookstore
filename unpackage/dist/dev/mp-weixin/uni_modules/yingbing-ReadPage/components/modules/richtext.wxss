@@ -1,0 +1,9 @@
+
+.read-rich-text.data-v-18f5a5cf {
+
+	box-sizing: border-box;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+

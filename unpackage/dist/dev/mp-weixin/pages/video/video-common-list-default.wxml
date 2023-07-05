@@ -1,0 +1,1 @@
+<view class="slot"><view class="left"><text>{{item.video.title}}</text><text>{{item.video.region}}</text><text>{{item.video.releaseTime}}</text></view><view class="right"><text>{{item.chapterList[item.videoIndex].title}}</text></view></view>

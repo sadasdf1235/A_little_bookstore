@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "video-common-list-default": "/pages/video/video-common-list-default",
+    "uni-card": "/uni_modules/uni-card/components/uni-card/uni-card",
+    "common-list": "/components/commonList/commonList"
+  }
+}

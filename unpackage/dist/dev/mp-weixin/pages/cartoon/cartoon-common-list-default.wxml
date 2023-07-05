@@ -1,0 +1,1 @@
+<view class="temp"><view class="bottom-text"><text>{{item.cartoon.title}}</text><text>{{item.cartoon.author}}</text><text>{{item.cartoon.comicType}}</text></view><view class="bottom-lText"><text>{{item.cartoon.cartoonTitle}}</text></view></view>

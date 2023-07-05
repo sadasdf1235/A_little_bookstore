@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "cartoon-common-list-default": "/pages/cartoon/cartoon-common-list-default",
+    "uni-icons": "/uni_modules/uni-icons/components/uni-icons/uni-icons",
+    "common-list": "/components/commonList/commonList"
+  }
+}

@@ -1,0 +1,13 @@
+.bottom .bottom-for {
+  margin-bottom: 30rpx ;
+}
+.bottom .bottom-for .bottom-action {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.bottom .bottom-for .bottom-action .bottom-left ._img {
+  width: 300rpx;
+  height: 300rpx;
+}
+

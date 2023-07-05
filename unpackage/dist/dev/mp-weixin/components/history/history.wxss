@@ -1,0 +1,8 @@
+.search-history .search-history-top {
+  display: flex;
+  justify-content: space-between;
+}
+.search-history .search-history-bottom .uni-tag {
+  margin: 30rpx 20rpx 0 0;
+}
+

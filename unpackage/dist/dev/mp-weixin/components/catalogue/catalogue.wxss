@@ -1,0 +1,23 @@
+.scroll {
+  white-space: nowrap;
+  height: 100vh;
+  margin-top: 10rpx;
+  padding-left: 20rpx;
+}
+.scroll .scroll-list {
+  padding: 20rpx 0;
+  color: #444;
+  font-size: 34rpx;
+  width: 480rpx;
+  overflow: hidden;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border-bottom: 1px solid #444;
+}
+.scroll .scrollActive {
+  color: #000;
+  font-size: 42rpx;
+  font-weight: 700;
+}
+
