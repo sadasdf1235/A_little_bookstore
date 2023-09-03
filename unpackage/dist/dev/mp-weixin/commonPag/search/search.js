@@ -295,29 +295,31 @@ var _default = {
                 //打开节流阀
                 _this.isloading = true;
                 if (!_this.searchMessage) {
-                  _context.next = 23;
+                  _context.next = 24;
                   break;
                 }
                 _context.next = 6;
                 return uni.$http.get("/fiction/search/title/".concat(_this.searchMessage, "/").concat(from, "/").concat(size));
               case 6:
                 result1 = _context.sent;
-                _context.next = 9;
+                console.log("/fiction/search/title/".concat(_this.searchMessage, "/").concat(from, "/").concat(size));
+                // 按作者进行搜索
+                _context.next = 10;
                 return uni.$http.get("/fiction/search/author/".concat(_this.searchMessage, "/").concat(from, "/").concat(size));
-              case 9:
+              case 10:
                 result2 = _context.sent;
                 if (!(result1.statusCode !== 200)) {
-                  _context.next = 12;
+                  _context.next = 13;
                   break;
                 }
                 return _context.abrupt("return", uni.$showMsg());
-              case 12:
+              case 13:
                 if (!(result2.statusCode !== 200)) {
-                  _context.next = 14;
+                  _context.next = 15;
                   break;
                 }
                 return _context.abrupt("return", uni.$showMsg());
-              case 14:
+              case 15:
                 list1 = [];
                 list2 = [];
                 if (result1.data.data) {
@@ -329,21 +331,21 @@ var _default = {
                 _this.isloading = false;
                 _this.total = result1.data.count + result2.data.count;
                 _this.valueList = _this.removeDuplicates(_this.valueList, 'fictionId', [].concat((0, _toConsumableArray2.default)(list1), (0, _toConsumableArray2.default)(list2)));
-                _context.next = 24;
+                _context.next = 25;
                 break;
-              case 23:
+              case 24:
                 // 用户没有输入内容就进行搜索时 触发
                 uni.showToast({
                   title: '请输入要搜索的内容',
                   duration: 1000,
                   icon: 'none'
                 });
-              case 24:
+              case 25:
                 _this.historyList.unshift(_this.searchMessage);
                 _this.historyList = Array.from(new Set(_this.historyList));
                 // 调用 uni.setStorageSync(key, value) 将搜索历史记录持久化存储到本地
                 uni.setStorageSync('bookSearchHistory', JSON.stringify(_this.historyList));
-              case 27:
+              case 28:
               case "end":
                 return _context.stop();
             }
@@ -363,13 +365,14 @@ var _default = {
               case 0:
                 from = _arguments2.length > 1 && _arguments2[1] !== undefined ? _arguments2[1] : 1;
                 size = _arguments2.length > 2 && _arguments2[2] !== undefined ? _arguments2[2] : 10;
+                _this2.isloading = true;
                 if (!_this2.searchMessage) {
-                  _context2.next = 12;
+                  _context2.next = 14;
                   break;
                 }
-                _context2.next = 5;
+                _context2.next = 6;
                 return uni.$http.get("/video/search/".concat(_this2.mes, "/").concat(_this2.searchMessage, "/").concat(from, "/").concat(size));
-              case 5:
+              case 6:
                 result = _context2.sent;
                 if (result.data.code == 0) {
                   _this2.total = result.data.count;
@@ -380,16 +383,17 @@ var _default = {
                 //去重
                 _this2.historyList = (0, _toConsumableArray2.default)(new Set(_this2.historyList));
                 uni.setStorageSync('videoSearchHistory', JSON.stringify(_this2.historyList));
-                _context2.next = 13;
+                _this2.isloading = false;
+                _context2.next = 15;
                 break;
-              case 12:
+              case 14:
                 // 用户没有输入内容就进行搜索时 触发
                 uni.showToast({
                   title: '请输入要搜索的内容',
                   duration: 1000,
                   icon: 'none'
                 });
-              case 13:
+              case 15:
               case "end":
                 return _context2.stop();
             }
@@ -409,9 +413,10 @@ var _default = {
               case 0:
                 from = _arguments3.length > 1 && _arguments3[1] !== undefined ? _arguments3[1] : 1;
                 size = _arguments3.length > 2 && _arguments3[2] !== undefined ? _arguments3[2] : 10;
-                _context3.next = 4;
+                _this3.isloading = true;
+                _context3.next = 5;
                 return uni.$http.get("/comic/search/title/".concat(_this3.searchMessage, "/").concat(from, "/").concat(size));
-              case 4:
+              case 5:
                 result = _context3.sent;
                 if (result.data.code == 0) {
                   _this3.total = result.data.count;
@@ -422,6 +427,7 @@ var _default = {
                   _this3.historyList = (0, _toConsumableArray2.default)(new Set(_this3.historyList));
                   //将历史记录存入本地
                   uni.setStorageSync("cartoonSearchHistory", JSON.stringify(_this3.historyList));
+                  _this3.isloading = false;
                 } else {
                   // 用户没有输入内容就进行搜索时 触发
                   uni.showToast({
@@ -430,7 +436,7 @@ var _default = {
                     icon: 'none'
                   });
                 }
-              case 6:
+              case 7:
               case "end":
                 return _context3.stop();
             }
@@ -494,6 +500,7 @@ var _default = {
     //搜索分类
     searchClassification: function searchClassification() {
       var page = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;
+      if (this.isloading) return;
       switch (this.fromPage) {
         case 'book':
           this.searchBook(page);

@@ -100,6 +100,7 @@
           */
           //按标题进行搜索
          let result1 = await uni.$http.get(`/fiction/search/title/${this.searchMessage}/${from}/${size}`)
+         console.log(`/fiction/search/title/${this.searchMessage}/${from}/${size}`);
          // 按作者进行搜索
          let result2 = await uni.$http.get(`/fiction/search/author/${this.searchMessage}/${from}/${size}`)
          if (result1.statusCode !== 200) return uni.$showMsg()
@@ -130,6 +131,7 @@
       },
       //搜索视频
       async searchVideo(e,from = 1,size = 10){
+        this.isloading = true;
         if(this.searchMessage){
           let result = await uni.$http.get(`/video/search/${this.mes}/${this.searchMessage}/${from}/${size}`)
           if(result.data.code == 0){
@@ -141,6 +143,7 @@
           //去重
           this.historyList = [...new Set(this.historyList)]
           uni.setStorageSync('videoSearchHistory', JSON.stringify(this.historyList))
+          this.isloading = false;
         }else{
         // 用户没有输入内容就进行搜索时 触发
         uni.showToast({
@@ -152,6 +155,7 @@
       },
       //搜索漫画
       async searchCartoon(e,from = 1,size = 10){
+        this.isloading = true;
         let result = await uni.$http.get(`/comic/search/title/${this.searchMessage}/${from}/${size}`)
         if(result.data.code == 0){
               this.total = result.data.count
@@ -162,6 +166,7 @@
             this.historyList = [...new Set(this.historyList)]
             //将历史记录存入本地
             uni.setStorageSync("cartoonSearchHistory",JSON.stringify(this.historyList));
+            this.isloading = false;
           }else{
           // 用户没有输入内容就进行搜索时 触发
           uni.showToast({
@@ -225,6 +230,7 @@
       },
       //搜索分类
       searchClassification(page = 1){
+        if(this.isloading)return
         switch(this.fromPage){
           case 'book':
           this.searchBook(page)
